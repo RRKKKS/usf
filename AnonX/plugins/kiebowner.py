@@ -157,23 +157,24 @@ def forward(client: Client, message: Message):
   rank = app.get_chat_member(chat_id, user_id)
   rank = rank.status
   if message.from_user.id == {OWNER_ID}:
-   app.send_message(chat_id,"رتبتك هياا \n│ \n└ʙʏ  : 😁❤️ مطور البوت ")
+   app.send_message(chat_id," • رتبتك هي : مطور البوت")
   if message.from_user.id == 5345637082:
-   app.send_message(chat_id,"رتبتك هياا \n│ \n└ʙʏ  : 🥺❤️ مطور السورس ")
+   app.send_message(chat_id," • رتبتك هي : مطور السورس")
   if message.from_user.id == 5762071510:
-   app.send_message(chat_id,"رتبتك هياا \n│ \n└ʙʏ  : 🥺❤️ مطور السورس ")
+   app.send_message(chat_id," • رتبتك هي : مطور السورس")
   if rank == "administrator":
-   app.send_message(chat_id,"رتبتك هياا \n│ \n└ʙʏ  : مطور ف المجموعه 😉❤️")
+   app.send_message(chat_id," • رتبتك هي : مطور في المجموعه")
   elif rank == "creator":
-   app.send_message(chat_id,"رتبتك هياا \n│ \n└ʙʏ  :🥺❤️ مطور اساسي")
+   app.send_message(chat_id," • رتبتك هي : المطور الاساس")
   elif rank == "member":
-   app.send_message(chat_id,"رتبتك هياا \n│ \n└ʙʏ  : عضو قمر 🙄❤️")
+   app.send_message(chat_id," • رتبتك هي : العضـو")
   elif rank == "restricted":
-   app.send_message(chat_id,"رتبتك هياا \n│ \n└ʙʏ  : 😂💔متقيد")
+   app.send_message(chat_id," • رتبتك هي : متقيد")
   elif rank == "left":
-   app.send_message(chat_id,"رتبتك هياا \n│ \n└ʙʏ  : 😁 مغادر")
+   app.send_message(chat_id,"• رتبتك هي : مغادر")
   elif rank == "kicked":
-   app.send_message(chat_id,"رتبتك هياا \n│ \n└ʙʏ  : 🤣💔 محظور")
+   app.send_message(chat_id,"• رتبتك هي : محظور")
+
 
 
 @app.on_message(filters.regex("✭ لغة البوت") & filters.private & SUDOERS)
